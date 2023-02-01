@@ -4,34 +4,35 @@
         <title>Darcy's Portfolio</title>
         <link rel="stylesheet" href="./CSS/index.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow|Nanum+Myeongjo">
-        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow|Nanum+Myeongjo">       
     </head>
     <body>
-        <header class="navigation">
+        <header class="navigation height01">
             <div class="inline-block hover logo">
-                <img src="Images/Mode=Light, Size=Default.png" alt="Logo Image">
+                <a href="index.html"><img src="Images/Mode=Light, Size=Default.png" alt="Logo Image"></a>                
             </div>
             <nav class="inline-block">
                 <ul class="horizontal">
-                    <li class="inline-block hover">About</li>
-                    <li class="inline-block hover">Skills</li>
-                    <li class="inline-block hover">Work</li>
+                    <a href="index.html"><li class="inline-block hover">About</li></a>
+                    <a href="#Skills"><li class="inline-block hover">Skills</li></a>
+                    <a href="#Work"><li class="inline-block hover">Work</li></a>
                     <li class="inline-block hover">Contact</li>
                 </ul>
             </nav>
         </header>
-        <section class="heroImg">
-            <div class="content">
+        <section class="heroImg" id="About">
+            <div class="feature">
                 <img src="Images/Hero Img.jpg" alt="Hero Image">
+            </div>
+            <div class="content">
                 <p>Darcy has a great empathic connection to others especially when they face difficulties with technology based mediums.
                     He is keen to understand how their problem/s are misaligning their expectations, limiting their understanding of a
                     product or feature. He strives to support others in adopting technology to function in the digital age.</p>
-                <button>Download Resume</button>
+                <!--<button>Download Resume</button>-->
             </div>
         </section>
         <!--My UX Skills section coded using CSS flex-->
-        <section class="mySkills">
+        <section class="mySkills" id="Skills">
             <h1 class="title">My UX Skills</h1>
             <div class="flexContainer">
                 <div class="flexChild">
@@ -52,35 +53,43 @@
             </div>
         </section>
         <!--My Work Section Constructed using CSS Grid-->
-        <section class="myWork">
+        <section class="myWork" id="Work">
             <h1 class="title">My Work</h1>
             <div class="workGrid">
                 <div class="workItem">                
-                        <img src="Images/accessibility-icon.svg" alt="Work Image">                    
-                    <div>
-                        <h4>Work 1</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur</p>
-                        <button>View</button>
+                    <div class="Medium"><img src="Images/RSPCA After.png" alt="Work Image"></div>
+                    <div class="Group">
+                        <h2>RSPCA Refocus & Reflow</h2>
+                        <h4 class="leftText">(Mobile focused review)</h4>
+                        <p>Renewing RSCPA's current webpage to eleviate the strains of outdated design choices. An examination of the 'adoption' flow revealed unecessary roadblocks.</p>
+                        <div class="inlineStack">
+                            <div><h4>Start Date:</h4><p>20/08/22</p></div>
+                            <div><h4>Finish Date:</h4><p>20/08/22</p></div>
+                        </div>
+                        <a href="html\Project"><button>View</button></a>
                     </div>
                 </div>
                 <div class="workItem">
-                    <div>
-                        <img src="Images/accessibility-icon.svg" alt="Work Image">
-                    </div>
-                    <div>
-                        <h4>Work 2</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur</p>
-                        <button>View</button>
+                    <div class="Medium"><img src="Images/RSPCA Before.png" alt="Work Image"></div>
+                    <div class="Group">
+                        <h2>ABC Reflow 'abc.net.au'</h2>
+                        <h4 class="leftText">(Desktop focused review)</h4>
+                        <p>Renewing RSCPA's current webpage to eleviate the strains of outdated design choices. An examination of the 'adoption' flow revealed unecessary roadblocks.</p>
+                        <div class="inlineStack">
+                            <div><h4>Start Date:</h4><p>20/08/22</p></div>
+                            <div><h4>Finish Date:</h4><p>20/08/22</p></div>
+                        </div>
+                        <a href="html\Project"><button>View</button></a>
                     </div>
                 </div>
             </div>
-            <h3 class="center">View All Projects</h3>
+            <a href="html\Project"><h3 class="center hover">View All Projects</h3></a>
         </section>
         <footer>
             <ul class="horizontal">
-                <li class="inline-block hover">About</li>
-                <li class="inline-block hover">Skills</li>
-                <li class="inline-block hover">Work</li>
+                <a href="index.html"><li class="inline-block hover">About</li></a>
+                <a href="#Skills"><li class="inline-block hover">Skills</li></a>
+                <a href="#Work"><li class="inline-block hover">Work</li></a>
                 <li class="inline-block hover">Contact</li>
             </ul>
         </footer>

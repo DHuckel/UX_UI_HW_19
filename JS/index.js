@@ -37,7 +37,3 @@ function hasScrolled() {
     }
     lastScrollTop = st;
 }
-
-$(document).ready(function(){
-    $("AboutHover")
-})

@@ -28,10 +28,16 @@ function hasScrolled() {
 
     if(st > lastScrollTop && st > navbarHeight){
         $('header').removeClass('nav-down').addClass('nav-up');
+        console.log("Navigation bar hidden")
     }   else {
         if(st + $(window).height() < $(document).height()) {
             $('header').removeClass('nav-up').addClass('nav-down');
+            console.log("Navigation bar revealed")            
         }
     }
     lastScrollTop = st;
 }
+
+$(document).ready(function(){
+    $("AboutHover")
+})

@@ -193,6 +193,9 @@ footer ul {
     padding: 10px;
     color: white;
 }
+footer li {
+    color: white;
+}
 .navigation {
     display: flex;
     justify-content: space-between;
